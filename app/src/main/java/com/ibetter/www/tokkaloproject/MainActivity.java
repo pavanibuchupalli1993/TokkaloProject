@@ -1,5 +1,6 @@
 package com.ibetter.www.tokkaloproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.ibetter.www.tokkaloproject.pavani.PavaniActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Toast.makeText(this,"new commit",Toast.LENGTH_LONG).show();
+        startActivity(new Intent(this, PavaniActivity.class));
     }
 
     @Override
